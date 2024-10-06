@@ -1,0 +1,26 @@
+.add-btn{
+    margin-left: 5px;
+    padding: 20px !important;
+    font-size: 20px !important;
+}
+
+.ghost-btn {
+    border: none;
+    color: #49b5e4;
+    background-color: inherit;
+    transform: rotateY(180deg);
+}
+
+.edit-btn {
+}
+
+.delete-btn {
+}
+
+.primary-btn{
+    background-color: #489cc1;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+}

@@ -1,0 +1,56 @@
+:root{
+    --main-bg-color: #489cc1;
+    --white-bg: white;
+    --primary-text-size: 20px;
+    --shadow-color: grey;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Namata', sans-serif;
+}
+.text-field{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    margin-bottom: 10px;
+}
+form{
+    width: 100%;
+    display: flex;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: left;
+    background-color: var(--white-bg);
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 0 0 4px 0 var(--shadow-color);
+}
+.main-container h1{
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(175, 197, 202, 255);
+    color: #535355;
+}
+.font-20 {
+    font-size: var(--primary-text-size);
+}
+.new-todo{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #489cc1;
+    font-family: 'Namata', sans-serif;
+    font-style:italic ;
+    font-weight: 600;
+    color: #c3b3ae;
+}
+.complete-task{
+    text-decoration: line-through;
+}

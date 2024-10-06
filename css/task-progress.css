@@ -1,0 +1,23 @@
+.task-progress{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.task-summary{
+    background: linear-gradient(to right, #97e44a 0%, #97e44a 55%, white 50%, white 100%);
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.task-summary span{
+    margin: 0 4px;
+}

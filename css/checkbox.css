@@ -1,0 +1,27 @@
+.checkbox-input{
+    appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(45deg, #cdd0d5, #ebebeb, #f3f3f3);
+    box-shadow: 0 0 5px rgba(186, 186, 186, 0.5);
+    border: 2px solid #aaa;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.checkbox-input:checked::after {
+    content: "\2713";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #485f95;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+.cb-lbl {
+    flex: 1;
+}
