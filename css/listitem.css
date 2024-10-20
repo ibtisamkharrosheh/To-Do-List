@@ -22,7 +22,7 @@
     background-color: #f0f8fe;
     color:var(--primary-text-color);
 }
-.list-item:nth-child(7){
+.list-item.last-item {
     background-color: var(--white-bg);
     color: var(--primary-text-color);
 }
