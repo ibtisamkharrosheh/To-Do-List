@@ -13,10 +13,24 @@
 
 .edit-btn {
 }
+/*.task-buttons  {
+    display: flex;
+    align-items: center; /* Align buttons horizontally
+    justify-content: center;
+    gap: 10px;  Space between buttons
+}*/
+.task-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
 
 .delete-btn {
 }
+.edit-btn, .delete-btn {
 
+}
 .primary-btn{
     background-color: #489cc1;
     color: #ffffff;

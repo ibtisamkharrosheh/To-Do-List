@@ -15,44 +15,17 @@
             <h1>TODOLIST</h1>
             <form>
                 <div class="text-field">
-                    <input type="text" name="new-todo" placeholder="What needs to be done?" class="new-todo font-20">
-                    <button class="primary-btn add-btn">+</button>
+                    <input type="text" name="new-todo"  id="taskInput" placeholder="What needs to be done?" class="new-todo font-20">
+                    <button type="button" class="primary-btn add-btn" id="addTaskButton">+</button>
                 </div>
             </form>
-            <div class="list-item font-20">
-                <input type="checkbox" class="checkbox-input" id="checkbox-input-read">
-                <label class="cb-lbl" for="checkbox-input-read">read the book (at least 5 pages</label>
-                <button class="edit-btn ghost-btn font-20">&#9998;</button>
-                <button class="delete-btn ghost-btn">&#10006;</button>
-            </div>
-            <div class="list-item font-20">
-                <input type="checkbox" class="checkbox-input" id="checkbox-input-buy">
-                <label class="cb-lbl complete-task" for="checkbox-input-buy">buy dog food</label>
-                <button class="edit-btn ghost-btn font-20">&#9998;</button>
-                <button class="delete-btn ghost-btn">&#10006;</button>
-            </div>
-            <div class="list-item font-20">
-                <input type="checkbox" class="checkbox-input" id="checkbox-input-call">
-                <label class="cb-lbl" for="checkbox-input-call">call my parents</label>
-                <button class="edit-btn ghost-btn font-20">&#9998;</button>
-                <button class="delete-btn ghost-btn">&#10006;</button>
-            </div>
-            <div class="list-item font-20">
-                <input type="checkbox" class="checkbox-input" id="checkbox-input-clean">
-                <label class="cb-lbl complete-task" for="checkbox-input-clean">clean my working place</label>
-                <button class="edit-btn ghost-btn font-20">&#9998;</button>
-                <button class="delete-btn ghost-btn">&#10006;</button>
-            </div>
-            <div class="list-item font-20 last-item">
-                <input type="checkbox" class="checkbox-input" id="checkbox-input-kill">
-                <label class="cb-lbl complete-task" for="checkbox-input-kill">kill Dill</label>
-                <button class="edit-btn ghost-btn font-20">&#9998;</button>
-                <button class="delete-btn ghost-btn">&#10006;</button>
-            </div>
+            <div id="task-list" class="task-list"></div> <!-- Task list container -->
             <div class="task-progress">
-                <div class="task-summary"><span><strong>3</strong> </span>of<span> <strong>5</strong></span> tasks done</div>
-                <button class="primary-btn">Remove checked &#10006;</button>
+                <div id="summary" class="task-summary">0 of 0 tasks done</div>
+                <button class="primary-btn" onclick="removeCompletedTasks()">Remove checked &#10006;</button>
             </div>
+
         </main>
+        <script src="js/todo.js"></script>
     </body>
 </html>
