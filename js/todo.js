@@ -138,7 +138,7 @@ function removeCompletedTasks() {
     }
 }
 
-
+// done
 document.addEventListener("DOMContentLoaded", () => {
     loadTasks();
     renderTasks();
