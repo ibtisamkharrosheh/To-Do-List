@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Booksection from "./Booksection";
-import Categories from "./Categories/Categories";
+import BookCarousel from "../components/BookCarousel/BookCarousel";
+import Categories from "../components/Categories/Categories";
 
  const Home = () => {
   const [nonfiction, setNonfiction] = useState(null);
@@ -40,8 +40,8 @@ import Categories from "./Categories/Categories";
   return (
     <>
       <Categories />
-      <Booksection book={nonfiction} sectionTitle="Nonfiction" />
-      <Booksection
+      <BookCarousel book={nonfiction} sectionTitle="Nonfiction" />
+      <BookCarousel
         book={fictionBooks}
         sectionTitle="Fiction"
         style={{
@@ -52,8 +52,8 @@ import Categories from "./Categories/Categories";
         }}
         className="text-color-white"
       />
-      <Booksection book={childrenBooks} sectionTitle="Children's" />
-      <Booksection
+      <BookCarousel book={childrenBooks} sectionTitle="Children's" />
+      <BookCarousel
         book={selfBooks}
         sectionTitle="Self Improvement"
         style={{

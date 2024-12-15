@@ -74,7 +74,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: #dadada;
-    margin: 20px 85px;
+    margin: 10px 2px;
     cursor: pointer;
     padding-top: 0;
     background-color: white; 
@@ -89,11 +89,11 @@
     justify-items: center;
   }
   .arrow-button.left {
-    left: -10px;
+    left: -70px;
   }
   
   .arrow-button.right {
-    right: -10px;
+    right: -70px;
   }
   
   .arrow-button:disabled {
