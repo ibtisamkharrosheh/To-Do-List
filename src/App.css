@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Centering the Card and Background */
+.book-detail-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ececec, #f4f4f4); /* Soft gradient background */
+  padding: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Card Styling */
+.book-detail {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+  padding: 20px 10px;
+  text-align: center;
+  max-width: 410px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  margin-left: 0; /* Remove left margin */
+  margin-right: 0; /* Remove right margin */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.book-detail:hover {
+  transform: translateY(-10px); /* Slightly lift the card */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Image Styling */
+.book-detail img {
+  max-width: 100%;
+  height: auto;
+  
+  transition: transform 0.3s ease; /* Smooth image zoom effect */
+}
+.image{
+  border-radius: 2em;
+}
+.book-detail img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Title Styling */
+.book-detail h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Text Styling */
+.book-detail p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #666;
+  font-family: 'Lora', serif; /* Elegant serif font */
+}
+
+/* Strong Text Styling */
+.book-detail p strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Description Styling */
+.book-detail .description {
+  color: #888;
+  font-size: 18px;
+  margin-top: 15px;
+  
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .book-detail {
+    padding: 25px;
+    max-width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .book-detail h1 {
+    font-size: 28px;
+  }
+
+  .book-detail img {
+    max-width: 90%;
+  }
+
+  .book-detail p {
+    font-size: 16px;
   }
 }

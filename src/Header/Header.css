@@ -1,0 +1,95 @@
+/* Header Styling */
+.header {
+  background-color: #82b012;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 150px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo-highlight {
+  color: white;
+  font-family: 'Sense Thin', 'Segoe UI';
+  font-weight: lighter;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  color: black;
+}
+
+.search-icon {
+  font-size: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown::after {
+  content: '\25BE'; 
+  font-size: 1em;
+  position: relative;
+  top: 1px;
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 868px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: left; 
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  .search-icon {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .header {
+    padding: 30px 50px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+}
