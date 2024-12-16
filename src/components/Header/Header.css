@@ -6,8 +6,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 150px;
+  position: relative;
+  z-index: 10; 
 }
 
+.nav {
+  display: flex;
+  gap: 15px;
+  z-index: 100; 
+}
 .logo {
   font-size: 28px;
   font-weight: bold;
@@ -19,11 +26,18 @@
   font-weight: lighter;
 }
 
-.nav {
-  display: flex;
-  gap: 15px;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
+.dropdown::after {
+  content: '\25BE'; 
+  font-size: 12px;
+  position: relative;
+  top: 1px;
+  color: rgb(249, 241, 241);
+}
 .nav a {
   text-decoration: none;
   color: white;
@@ -34,62 +48,56 @@
   color: black;
 }
 
-.search-icon {
-  font-size: 30px;
+.hamburger {
+  display: none; 
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
 }
 
-.dropdown::after {
-  content: '\25BE'; 
-  font-size: 1em;
-  position: relative;
-  top: 1px;
-  color: black;
-}
-
-/* Responsive Styles */
 @media (max-width: 868px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
   }
 
-  .logo {
-    font-size: 24px;
+  .hamburger {
+    display: flex; 
   }
 
   .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #82b012;
+    width: 100%; 
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    text-align: left; 
+    text-align: left;
+    gap: 0; 
+    z-index: 101; 
+  }
+
+  .nav.nav-open {
+    display: flex; 
   }
 
   .nav a {
+    padding: 10px 20px;
     font-size: 16px;
+    width: 100%;
   }
 
-  .search-icon {
-    font-size: 40px;
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 580px) {
-  .header {
-    padding: 30px 50px;
-  }
-
-  .logo {
-    font-size: 20px;
-  }
-
-  .nav a {
-    font-size: 14px;
+  body.nav-open .content {
+    margin-top: 200px; 
   }
 }

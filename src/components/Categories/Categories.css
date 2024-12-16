@@ -55,9 +55,15 @@
     margin: 10px 0 0;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 858px) {
     .categories-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .categories-section{
+      padding: 5px 5px;
+    }
+    body.nav-open .categories-section {
+      margin-top: 300px;
     }
   }
   
@@ -70,6 +76,9 @@
   @container (max-width: 600px) {
     .category-item {
       flex-direction: column;
+    }
+    body.nav-open .categories-section {
+      margin-top: 300px;
     }
   }
   

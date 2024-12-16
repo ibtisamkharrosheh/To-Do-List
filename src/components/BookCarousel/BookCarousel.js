@@ -2,9 +2,10 @@ import React from 'react';
 import Slider from 'react-slick';
 import BookCard from './Bookcard';
 import ArrowButton from '../ArrowButton';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './BookCarousel.css';
+
 const BookCarousel = ({ book, sectionTitle, style, className }) => {
   const books = Array.isArray(book) ? [...new Set(book)] : []; // Remove duplicates
 

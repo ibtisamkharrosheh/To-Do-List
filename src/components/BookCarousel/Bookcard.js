@@ -5,6 +5,7 @@ const BookCard = ({ bookItem, className }) => {
   const navigate = useNavigate();
 
   return (
+    <>
     <div
       key={bookItem.id}
       className="book-card"
@@ -19,6 +20,7 @@ const BookCard = ({ bookItem, className }) => {
         REVIEWED BY {bookItem.reviewedBy.toUpperCase()}
       </p>
     </div>
+    </>
   );
 };
 
